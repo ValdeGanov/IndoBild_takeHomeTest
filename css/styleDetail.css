@@ -1,0 +1,530 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main CSS */
+
+nav {
+  position: fixed;
+  top: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+button:hover,
+input:hover,
+select:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+div .logo {
+  cursor: pointer;
+}
+
+.span.border {
+  display: inline-block;
+  border-left: 1px solid grey;
+  width: 10px;
+  height: 30px;
+}
+
+#createevent {
+  position: relative;
+  width: 105px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ff843e;
+  color: white;
+  border: none;
+}
+
+#createevent:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: #ff843e;
+  color: white;
+}
+
+#signin {
+  position: relative;
+  left: -30px;
+  width: 105px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  color: #ff843e;
+  border: 1.5px solid #ff843e;
+}
+
+#signin:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: white;
+  color: #ff843e;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.nav-wrapper {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 122px;
+  height: 29.68px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.search-box input {
+  width: 539px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box input:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.container {
+  height: 1690px;
+  position: relative;
+}
+
+.hero-blur {
+  height: 640px;
+  background-image: url(../img/FB-Event-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 60px;
+}
+
+.hero {
+  position: absolute;
+  top: 50px;
+  left: 160px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 1080px;
+  height: 1530px;
+  border: 0.5px solid grey;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.top-contents {
+  display: flex;
+}
+
+.pic {
+  width: 720px;
+  height: 360px;
+  background-color: red;
+  background-image: url(../img/FB-Event-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tittle {
+  box-sizing: border-box;
+  width: 360px;
+  height: 360px;
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  font-size: 24px;
+  font-family: "roboto";
+  font-weight: 700;
+  line-height: 28px;
+  color: #334553;
+}
+
+.watermark {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 10px;
+}
+
+.tittle img {
+  width: 24px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.tittle button {
+  width: 260px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff843e;
+  color: #fff;
+  margin-top: 50px;
+  border: none;
+}
+
+.middle-contents {
+  display: flex;
+}
+
+.middle-contents div {
+  width: 100%;
+  height: 240px;
+  background-color: white;
+  border: 0.5px dashed grey;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.middle-contents div img {
+  width: 24px;
+  height: 27px;
+}
+
+.datetime,
+.venue,
+.ticket {
+  display: flex;
+}
+
+.datetime p,
+.venue p,
+.ticket p {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.bottom-contents {
+  border-bottom: 0.5px dashed grey;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.bottom-contents p {
+  margin-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+}
+
+.organizer-profile {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 0.5px dashed grey;
+  height: 290px;
+}
+
+.organizer-profile img {
+  width: 175px;
+  height: 175px;
+}
+
+.organizer-profile button {
+  width: 113px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff843e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.relate-event {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.card-wrapper {
+  box-sizing: border-box;
+  width: 92.5%;
+  display: flex;
+  position: absolute;
+  top: 80px;
+}
+
+.card {
+  width: 350px;
+  height: 280px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  margin-right: 20px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.arrow-left {
+  position: absolute;
+  left: -15px;
+  bottom: 135px;
+  z-index: 999;
+}
+
+.arrow-right {
+  position: absolute;
+  right: -1px;
+  bottom: 135px;
+  z-index: 10;
+}
+
+.like {
+  position: absolute;
+  top: 25px;
+  right: -50px;
+}
+
+.card .content {
+  width: 250px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #334553;
+}
+
+.card p {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.card p.card-tittle {
+  font-weight: 700;
+  color: #334553;
+}
+
+.card p.card-date {
+  font-weight: 400;
+  color: #334553;
+}
+
+.card p.card-venue {
+  font-weight: 400;
+  color: #93999d;
+}
+
+.card2,
+.card8,
+.card4 {
+  position: relative;
+}
+
+.card2.header {
+  height: 150px;
+  background-image: url(../img/FB-Event-2.svg);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card8.header {
+  height: 150px;
+  background-image: url(../img/FB-Event-8.svg);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card4.header {
+  height: 150px;
+  background-image: url(../img/FB-Event-4.svg);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+footer {
+  height: 60px;
+  background-color: #f6f6f6;
+  line-height: 60px;
+  text-align: center;
+}

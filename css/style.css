@@ -1,0 +1,502 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main CSS */
+
+nav {
+  position: fixed;
+}
+
+body {
+  height: 1000px;
+  font-family: "Roboto";
+}
+
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+button:hover,
+input:hover,
+select:hover {
+  background-color: #e6e6e6;
+}
+
+div .logo {
+  cursor: pointer;
+}
+
+.span.border {
+  display: inline-block;
+  border-left: 1px solid grey;
+  width: 10px;
+  height: 30px;
+}
+
+#createevent {
+  position: relative;
+  width: 105px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ff843e;
+  color: white;
+  border: none;
+}
+
+#createevent:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: #ff843e;
+  color: white;
+}
+
+#signin {
+  position: relative;
+  left: -30px;
+  width: 105px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  color: #ff843e;
+  border: 1.5px solid #ff843e;
+}
+
+#signin:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: white;
+  color: #ff843e;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.nav-wrapper {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 122px;
+  height: 29.68px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.search-box input {
+  width: 539px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box input:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.hero {
+  position: relative;
+  top: 60px;
+  background-image: url(../img/background_hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  height: 649px;
+}
+
+.hero-wrapper {
+  display: flex;
+  z-index: 0;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-hero {
+  width: 420px;
+  height: 549px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "roboto";
+  font-size: 24px;
+  color: #334553;
+  margin-bottom: 30px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.form-hero p {
+  font-family: "roboto";
+  font-size: 13px;
+  color: #334553;
+  margin-bottom: 30px;
+}
+
+.form-hero input,
+.form-hero select {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+#cevent,
+#slocation,
+#date {
+  width: 320px;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  border: 2px solid grey;
+  font-size: 13px;
+}
+
+input#submitform {
+  width: 320px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff843e;
+  border: none;
+  color: #fff;
+}
+
+input#submitform:hover {
+  transform: scale(1.03);
+  transition: 0.8s;
+}
+
+.highlightCard {
+  position: relative;
+  width: 840px;
+  display: flex;
+  justify-content: space-around;
+  top: 38px;
+  flex-wrap: wrap;
+}
+
+h1#highlightE {
+  position: absolute;
+  color: white;
+  top: -48px;
+  left: 20px;
+}
+
+.card {
+  width: 377px;
+  height: 315px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.arrow-left {
+  position: absolute;
+  left: -1px;
+  bottom: 135px;
+  z-index: 10;
+}
+
+.arrow-right {
+  position: absolute;
+  right: -1px;
+  bottom: 135px;
+  z-index: 10;
+}
+
+.like {
+  position: relative;
+  top: 5px;
+  left: 330px;
+  z-index: 10;
+}
+
+.unlike {
+  position: relative;
+  top: 5px;
+  left: 330px;
+  z-index: 10;
+}
+
+.card a {
+  text-decoration: none;
+  color: #334553;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.card p.card-tittle {
+  font-weight: 700;
+  color: #334553;
+}
+
+.card p.card-date {
+  font-weight: 400;
+  color: #334553;
+}
+
+.card p.card-venue {
+  font-weight: 400;
+  color: #93999d;
+}
+
+.card1.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-1.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card2.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-2.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card3.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-3.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card4.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-4.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card5.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-5.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card6.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-6.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card7.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-7.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card8.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-8.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card9.header {
+  height: 189px;
+  background-image: url(../img/FB-Event-9.svg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+p.upcoming {
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  top: 80px;
+  left: 50px;
+  font-size: 24px;
+  font-family: "Roboto";
+}
+
+.event-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 100px;
+}
+
+footer {
+  height: 60px;
+  background-color: #f6f6f6;
+  line-height: 60px;
+  text-align: center;
+}

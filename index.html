@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valde Ganov - IndoBild Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/fd8e4db6a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAV BAR -->
+      <nav class="nav-wrapper">
+        <div class="logo">
+          <img src="./img/Logo.svg" alt="EventIn" />
+        </div>
+        <div class="search-box">
+          <input
+            type="search"
+            placeholder="&#xf002; Search your venue location"
+          />
+        </div>
+        <ul>
+          <li><a href="#"></a>Explore Event</li>
+          <li><a href="#"></a>Help</li>
+        </ul>
+        <span class="span border"></span>
+        <button id="createevent">Create Event</button>
+        <button id="signin">Sign In</button>
+      </nav>
+      <!-- END OF NAVBAR -->
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-wrapper">
+          <div class="form-hero">
+            <h1>
+              Hey! Looking for an interesting event? Let us help you find it.
+            </h1>
+            <label for="cevent">First, choose a category that you want.</label
+            ><br />
+            <select id="cevent">
+              <option id="cevent" value="Event">Category Event</option>
+              <option id="cevent" value="Event A">Event A</option>
+              <option id="cevent" value="Event B">Event B</option>
+              <option id="cevent" value="Event C">Event C</option></select
+            ><br />
+            <label for="slocation">Where do you want to go?</label><br />
+            <input
+              id="slocation"
+              type="search"
+              placeholder="&#xf002; Search your location"
+            />
+            <br />
+            <label for="date">Fill up your free time!</label><br />
+            <input
+              placeholder="Pick a Date!"
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"
+            />
+
+            <br />
+            <input id="submitform" type="submit" value="Lets Go!" />
+          </div>
+
+          <!-- HIGHLIGHT CARD CONTAINER -->
+          <div class="highlightCard">
+            <img class="arrow-left" src="./img/Left.svg" alt="" />
+            <img class="arrow-right" src="./img/Right.svg" alt="" />
+            <h1 id="highlightE">Our Highlighted Event</h1>
+            <div class="card">
+              <a href="./pages/indexDetail.html">
+                <div class="card1 header">
+                  <img class="like" src="./img/Like.svg" alt="Like" />
+                </div>
+                <div class="card1 content">
+                  <p class="card-tittle">Coffee Journey 2019</p>
+                  <p class="card-date">
+                    1 Aug 2019 - 3 Aug 2019 | 11:00 - 17:00
+                  </p>
+                  <p class="card-venue">
+                    Indobild, Blugreen Office SBI, 8th Floor
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="">
+                <div class="card2 header">
+                  <img class="like" src="./img/unlike.svg" alt="Like" />
+                </div>
+                <div class="card2 content">
+                  <p class="card-tittle">
+                    Indonesia Aeropress Coffee and Barista Championship 2019
+                  </p>
+                  <p class="card-date">
+                    1 Aug 2019 - 3 Aug 2019 | 11:00 - 17:00
+                  </p>
+                  <p class="card-venue">
+                    Indobild, Blugreen Office SBI, 8th Floor
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF HERO -->
+
+      <div class="event-wrapper">
+        <p class="upcoming">Upcoming Event</p>
+        <div class="card">
+          <a href="">
+            <div class="card1 header">
+              <img class="like" src="./img/Like.svg" alt="Like" />
+            </div>
+            <div class="card1 content">
+              <p class="card-tittle">Coffee Journey 2019</p>
+              <p class="card-date">1 Aug 2019 - 3 Aug 2019 | 11:00 - 17:00</p>
+              <p class="card-venue">Indobild, Blugreen Office SBI, 8th Floor</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card2 header">
+              <img class="like" src="./img/unlike.svg" alt="Like" />
+            </div>
+            <div class="card2 content">
+              <p class="card-tittle">
+                ESL Indonesia Championship Season 2 - Dota 2 Finals
+              </p>
+              <p class="card-date">
+                Sun, 15 Sep 2019 | 10:00 AM - 08:00 PM WIB
+              </p>
+              <p class="card-venue">
+                Tennis Indoor Stadium, Jl. Pintu Satu Senaya…
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card3 header">
+              <img class="like" src="./img/unlike.svg" alt="Like" />
+            </div>
+            <div class="card3 content">
+              <p class="card-tittle">Binance Super Meetup Indonesia</p>
+              <p class="card-date">
+                Sat, 14 Sep 2019 | 04:00 PM - 06:00 PM WIB
+              </p>
+              <p class="card-venue">
+                Sheraton Grand Jakarta Gandaria City Hotel…
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card4 header">
+              <img class="like" src="./img/Like.svg" alt="Like" />
+            </div>
+            <div class="card4 content">
+              <p class="card-tittle">Indonesia-Korea Conference 2019</p>
+              <p class="card-date">
+                Wed, 18 Sep 2019 | 08:00 AM - 05:00 AM WIB
+              </p>
+              <p class="card-venue">
+                Soehanna Hall, Kec. Kby. Baru, DKI Jakarta
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card5 header">
+              <img class="like" src="./img/Like.svg" alt="Like" />
+            </div>
+            <div class="card5 content">
+              <p class="card-tittle">
+                The 6th International Young Investors Award
+              </p>
+              <p class="card-date">9 Oct 2019 - 12 Oct 2019 | 08:00 PM WIB</p>
+              <p class="card-venue">
+                Taman Mini Indonesia Indah, Jl. Raya Taman…
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card6 header">
+              <img class="like" src="./img/unlike.svg" alt="Like" />
+            </div>
+            <div class="card6 content">
+              <p class="card-tittle">Opera at the Ballpark General Admission</p>
+              <p class="card-date">Sat, 21 Sep 2019 | 7:30 PM - 10:30 PM PDT</p>
+              <p class="card-venue">
+                Oracle Park, 24 Willie Mays Plaza, San Fransis…
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card7 header">
+              <img class="like" src="./img/unlike.svg" alt="Like" />
+            </div>
+            <div class="card7 content">
+              <p class="card-tittle">PLANET HOME 2019 - VILLAGE</p>
+              <p class="card-date">113 Sep 2019 - 15 Sep 2019 | 05:00 PM PDT</p>
+              <p class="card-venue">
+                Palace of Fine Arts, 3601 Lyon Street, San Fra…
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card8 header">
+              <img class="like" src="./img/unlike.svg" alt="Like" />
+            </div>
+            <div class="card8 content">
+              <p class="card-tittle">TEDxSanFransisco : Dare To Know</p>
+              <p class="card-date">Thu, 3 Oct 2019 | 09:00 - 05:30 PM PDT</p>
+              <p class="card-venue">
+                Herbst Theatre, 401 Van Ness Avenue, San Fr…
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <div class="card9 header">
+              <img class="like" src="./img/Like.svg" alt="Like" />
+            </div>
+            <div class="card9 content">
+              <p class="card-tittle">Morcheeba at The Midway</p>
+              <p class="card-date">11 Aug 2019 - 12 Aug 2019 | 09:00 & 14:00</p>
+              <p class="card-venue">The Midway, 900 Marin St, San Fransisco</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <footer>
+        <p>© 2022 PT. Buana Artha Indopratama</p>
+      </footer>
+    </div>
+  </body>
+</html>
